@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0 auto;
+  width: 80%;
+}
+
+header, footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#site-logo {
+  width: 100px;
+  border: none;
+}
+
+/* ========== HEADER AREA ========== */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-text h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 3em;
+  background: linear-gradient(#006600, #003300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.phone {
+  color: #ff9900;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.tagline {
+  font-style: italic;
+  color: #663300;
+  margin: 0;
+}
+
+/* ========== NAVIGATION ========== */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.nav-menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #990099;
+}
+
+.nav-menu a:hover {
+  color: #336633;
+  text-decoration: underline;
+}
+
+.nav-menu a.active {
+  color: #336633;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  margin-bottom: 30px;
+}
+
+.services-list {
+  color: #336633;
+  margin-left: 20px;
+}
+
+.services-list ul {
+  margin-left: 20px;
+}
+
+.testimonial {
+  margin: 20px 0;
+}
+
+.thumb {
+  width: 150px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  font-size: 0.8em;
+  color: #333;
+}
