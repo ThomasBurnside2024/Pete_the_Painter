@@ -19,34 +19,36 @@ header, footer {
 /* ========== HEADER AREA ========== */
 .header-flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #f8f8f8; 
+  padding: 20px; 
+  cursor: pointer; 
+  width: 100%; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
 }
 
-.header-text h1 {
-  font-family: "Times New Roman", serif;
-  font-size: 3em;
-  background: linear-gradient(#006600, #003300);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
+.header-flex:hover {
+  background-color: #e0e0e0; 
 }
 
-.phone {
-  color: #ff9900;
-  font-weight: bold;
-  margin: 5px 0;
+#site-logo {
+  max-width: 200px; 
+  height: auto; 
 }
 
-.tagline {
-  font-style: italic;
-  color: #663300;
-  margin: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
-/* ========== NAVIGATION ========== */
 .nav-menu {
   list-style: none;
   padding: 0;
@@ -73,7 +75,6 @@ header, footer {
   color: #336633;
 }
 
-/* ========== MAIN CONTENT ========== */
 main {
   margin-bottom: 30px;
 }
@@ -97,7 +98,6 @@ main {
   margin-top: 10px;
 }
 
-/* ========== FOOTER ========== */
 footer {
   font-size: 0.8em;
   color: #333;
