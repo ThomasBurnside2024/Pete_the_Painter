@@ -2,58 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pete the Painter :: Testimonials</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header-flex" onclick="window.location.href='index.html';">
-  <img src="painterlogo.gif" alt="Pete the Painter logo" id="site-logo">
-  <span class="sr-only">Return to homepage</span>
-</header>
-    
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="testimonials.html">Testimonials</a></li>
-        <li><a href="#">Free Estimate</a></li>
-      </ul>
-    </nav>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="images/painterlogo.gif" alt="Pete the Painter Logo" id="site-logo">
+    </a>
+    <p class="tagline">Serving the Northwest Chicago Suburbs Since 1986</p>
   </header>
 
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="#">Free Estimate</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
   <main>
-    <h2>Customer Testimonials</h2>
-
     <section class="testimonial">
-      <h3>Painting</h3>
-      <p>“We were selling our home and needed a fast, quality refresh. Pete’s team was punctual, tidy, and the results were fantastic.”</p>
-      <a href="paintroom.jpg" target="_blank">
-        <img src="paintroom_small.jpg" alt="Freshly painted living room" class="thumb">
-      </a>
-    </section>
+      <h3 class="section-header">Painting</h3>
+      <div class="testimonial_details">
+        <a href="images/foyer.jpg" target="_blank">
+          <img src="images/foyer_small.jpg" alt="Foyer" class="thumb">
+        </a>
+        <div class="testimonial_narrative">
+          <p>
+            We were selling our home and needed a room painted quickly. Pete's team promptly came out
+            and gave an estimate. It was quite reasonably priced. They started and finished the very next day!
+            — The Morris Family
+          </p>
+        </div>
+      </div>
 
-    <section class="testimonial">
-      <h3>Remodeling</h3>
-      <p>“They coordinated painting during our remodel seamlessly—great communication and no surprises.”</p>
-      <a href="foyer.jpg" target="_blank">
-        <img src="foyer_small.jpg" alt="Updated foyer with clean white trim" class="thumb">
-      </a>
-    </section>
-
-    <section class="testimonial">
-      <h3>Bedroom Update</h3>
-      <p>“New color, crisp edges, and zero mess. We’ll definitely hire Pete again.”</p>
-      <a href="undecorate.jpg" target="_blank">
-        <img src="undecorate_small.jpg" alt="Bedroom accent wall in progress" class="thumb">
-      </a>
+      <h3 class="section-header">Remodeling</h3>
+      <div class="testimonial_details">
+        <a href="images/paintroom.jpg" target="_blank">
+          <img src="images/paintroom_small.jpg" alt="Remodeling" class="thumb">
+        </a>
+        <div class="testimonial_narrative">
+          <p>
+            We needed to "undecorate" a room — the previous owners had been a little too creative.
+            Pete's team provided an estimate, promptly began work, and within a few days our room was looking great!
+            — The Felk​es
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2012 Pete the Painter</p>
-    <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+    <div class="footer-phone">1-800-The-Painter</div>
+    <div class="footer-details">
+      <p>Copyright © 2012 Pete the Painter</p>
+      <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+    </div>
   </footer>
+
 </body>
 </html>

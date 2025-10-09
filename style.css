@@ -1,58 +1,40 @@
+/* General Page Layout */
 body {
   font-family: Arial, sans-serif;
+  margin: 3px;
+  padding: 3px;
+  width: 90%;
   background-color: #fff;
   color: #000;
-  margin: 0 auto;
-  width: 80%;
 }
 
-header, footer {
+/* Header */
+header {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 5px;
 }
 
 #site-logo {
-  width: 100px;
+  width: 620px;
+  height: 120px;
   border: none;
+  filter: drop-shadow(1px 1px 2px #333);
 }
 
-/* ========== HEADER AREA ========== */
-.header-flex {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  background-color: #f8f8f8; 
-  padding: 20px; 
-  cursor: pointer; 
-  width: 100%; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  transition: background-color 0.3s ease; 
+.tagline {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 3px;
 }
 
-.header-flex:hover {
-  background-color: #e0e0e0; 
-}
-
-#site-logo {
-  max-width: 200px; 
-  height: auto; 
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
+/* Navigation Bar */
 .nav-menu {
   list-style: none;
+  text-align: center;
   padding: 0;
-  margin: 15px 0;
+  margin: 5px 0 15px 0;
 }
 
 .nav-menu li {
@@ -63,42 +45,65 @@ header, footer {
 .nav-menu a {
   text-decoration: none;
   font-weight: bold;
-  color: #990099;
+  color: #660066; /* purple like screenshot */
+}
+
+.nav-menu a:last-child {
+  color: #0000FF; /* "Free Estimate" in blue */
 }
 
 .nav-menu a:hover {
-  color: #336633;
   text-decoration: underline;
 }
 
-.nav-menu a.active {
-  color: #336633;
+/* Testimonials Section */
+.section-header {
+  background-color: #336633;
+  color: #fff;
+  padding: 4px 5px;
+  font-weight: bold;
+  text-align: left;
 }
 
-main {
-  margin-bottom: 30px;
-}
-
-.services-list {
-  color: #336633;
-  margin-left: 20px;
-}
-
-.services-list ul {
-  margin-left: 20px;
-}
-
-.testimonial {
-  margin: 20px 0;
+.testimonial_details {
+  display: flex;
+  align-items: flex-start;
+  margin: 8px 0 20px 0;
 }
 
 .thumb {
-  width: 150px;
+  width: 100px;
+  height: 133px;
+  margin-right: 5px;
   border: none;
-  margin-top: 10px;
 }
 
+.testimonial_narrative p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.3em;
+}
+
+/* Footer */
 footer {
-  font-size: 0.8em;
+  text-align: left;
+  font-size: 0.85em;
+  margin-top: 30px;
   color: #333;
+}
+
+.footer-phone {
+  color: #336633;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-details a {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+.footer-details a:hover {
+  text-decoration: underline;
 }
